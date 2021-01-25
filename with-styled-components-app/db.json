@@ -1,5 +1,5 @@
 {
-    "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
+    "bg": "https://i.imgur.com/cfiHaZH.png",
     "title": "Genshin Impact Quiz",
     "description": "Teste os seus conhecimentos sobre Genshin Impact!",
     "questions": [
@@ -31,12 +31,12 @@
     ],
     "theme": {
       "colors": {
-        "primary": "#40798C",
-        "secondary": "#CAD2C5",
-        "mainBg": "#FE9000",
-        "contrastText": "#440381",
-        "wrong": "#C3423F",
-        "success": "#001D4A"
+        "primary": "#507255",
+        "secondary": "#F75C03",
+        "mainBg": "#291720",
+        "contrastText": "#DAFEB7",
+        "wrong": "#D90368",
+        "success": "#F4E76E"
       },
       "borderRadius": "4px"
     }
