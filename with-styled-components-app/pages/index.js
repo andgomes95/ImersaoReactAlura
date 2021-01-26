@@ -1,28 +1,27 @@
-import styled from 'styled-components'
-import db from '../db.json'
-import Widget from '../src/Components/Widget'
-import Footer from '../src/Components/Footer'
-import GitHubCorner from '../src/Components/GitHubCorner'
-import QuizBackground from '../src/Components/QuizBackground'
-import QuizLogo from '../src/Components/QuizLogo'
-import ButtonIniciar from '../src/Components/ButtonIniciar'
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+import db from '../db.json';
+import Widget from '../src/Components/Widget';
+import Footer from '../src/Components/Footer';
+import GitHubCorner from '../src/Components/GitHubCorner';
+import QuizBackground from '../src/Components/QuizBackground';
+import QuizLogo from '../src/Components/QuizLogo';
+import QuizContainer from '../src/Components/QuizContainer';
 
-
-//Title com styled component
+// Title com styled component
 // const Title = styled.h1`
 //   font-size: 50px;
 //   color: ${({ theme }) => theme.colors.primary};
 // `
 
-//Title com react puro
+// Title com react puro
 // function Title(props){
 //   return (
 //     <h1>{props.children}</h1>
 //   );
 // }
 
-
-////Outro BG: "bg": "https://i.imgur.com/Vfq71Zl.png",
+/// /Outro BG: "bg": "https://i.imgur.com/Vfq71Zl.png",
 // const BackgroundImage  = styled.div`
 //   background-image: url(${db.bg});
 //   flex: 1;
@@ -30,41 +29,46 @@ import ButtonIniciar from '../src/Components/ButtonIniciar'
 //   background-position: center;
 // `;
 
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px){
-    margin: auto;
-    padding: 15px;
-  }
-`;
-
 export default function Home() {
-  return(
+  const router = useRouter();
+  const [name, setName] = useState('');
+
+  return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-      <QuizLogo></QuizLogo>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
             <h1>Genshin Impactado</h1>
           </Widget.Header>
-          
+          <Widget.Content>
+            <form onSubmit={function (e) {
+              e.preventDefault();
+              // Router manda para a proxima pagina
+              router.push(`/quiz?name=${name}`);
+            }}
+            >
+              <input
+                placeholder="Coloque seu nome"
+                onChange={function (e) {
+                  setName(e.target.value);
+                }}
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+              </button>
+            </form>
+          </Widget.Content>
+        </Widget>
+        <Widget>
           <Widget.Content>
             <p>HAIL THE PAIMON</p>
           </Widget.Content>
         </Widget>
-        <Widget>
-            <Widget.Content>
-              <p>HAIL THE PAIMON</p>
-              <ButtonIniciar textButton={"Iniciar"} urlButton={"#"}></ButtonIniciar>
-            </Widget.Content>
-        </Widget>
-        <Footer/>
+        <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/andgomes95/ImersaoReactAlura"></GitHubCorner>
-      
+      <GitHubCorner projectUrl="https://github.com/andgomes95/ImersaoReactAlura" />
+
     </QuizBackground>
   );
 }
