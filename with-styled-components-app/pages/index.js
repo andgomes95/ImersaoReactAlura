@@ -5,6 +5,8 @@ import Footer from '../src/Components/Footer'
 import GitHubCorner from '../src/Components/GitHubCorner'
 import QuizBackground from '../src/Components/QuizBackground'
 import QuizLogo from '../src/Components/QuizLogo'
+import ButtonIniciar from '../src/Components/ButtonIniciar'
+
 
 //Title com styled component
 // const Title = styled.h1`
@@ -56,6 +58,7 @@ export default function Home() {
         <Widget>
             <Widget.Content>
               <p>HAIL THE PAIMON</p>
+              <ButtonIniciar textButton={"Iniciar"} urlButton={"#"}></ButtonIniciar>
             </Widget.Content>
         </Widget>
         <Footer/>
