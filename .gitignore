@@ -1,0 +1,34 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+with-styled-components-app/node_modules
+with-styled-components-app/.pnp
+with-styled-components-app/.pnp.js
+
+# testing
+with-styled-components-app/coverage
+
+# next.js
+with-styled-components-app/.next/
+with-styled-components-app/out/
+
+# production
+with-styled-components-app/build
+
+# misc
+with-styled-components-app/.DS_Store
+with-styled-components-app/*.pem
+
+# debug
+with-styled-components-app/npm-debug.log*
+with-styled-components-app/yarn-debug.log*
+with-styled-components-app/yarn-error.log*
+
+# local env files
+with-styled-components-app/.env.local
+with-styled-components-app/.env.development.local
+with-styled-components-app/.env.test.local
+with-styled-components-app/.env.production.local
+
+# vercel
+with-styled-components-app/.vercel
