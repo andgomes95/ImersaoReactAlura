@@ -7,6 +7,8 @@ import GitHubCorner from '../src/Components/GitHubCorner';
 import QuizBackground from '../src/Components/QuizBackground';
 import QuizLogo from '../src/Components/QuizLogo';
 import QuizContainer from '../src/Components/QuizContainer';
+import Input from '../src/Components/Input';
+import Button from '../src/Components/Button';
 
 // Title com styled component
 // const Title = styled.h1`
@@ -39,24 +41,26 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Genshin Impactado</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit={function (e) {
+            <form onSubmit={(e) => {
               e.preventDefault();
               // Router manda para a proxima pagina
               router.push(`/quiz?name=${name}`);
             }}
             >
-              <input
+              <Input
+                name="nomeDoUsuario"
                 placeholder="Coloque seu nome"
-                onChange={function (e) {
+                onChange={(e) => {
                   setName(e.target.value);
                 }}
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
+              <Button type="submit" disabled={name.length === 0}>
                 Jogar
-              </button>
+              </Button>
             </form>
           </Widget.Content>
         </Widget>

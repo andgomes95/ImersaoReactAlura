@@ -1,43 +1,57 @@
 {
-    "bg": "https://i.imgur.com/cfiHaZH.png",
-    "title": "Genshin Impact Quiz",
-    "description": "Teste os seus conhecimentos sobre Genshin Impact!",
-    "questions": [
-      {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
-        "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
-        "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
-        ]
-      }
-    ],
-    "external": [
-      ""
-    ],
-    "theme": {
-      "colors": {
-        "primary": "#507255",
-        "secondary": "#F75C03",
-        "mainBg": "#291720",
-        "contrastText": "#DAFEB7",
-        "wrong": "#D90368",
-        "success": "#F4E76E"
-      },
-      "borderRadius": "4px"
+  "bg": "https://www.gensh.in/wallpaper/genshin/genshin_25_4K.jpg",
+  "title": "Genshin Impact Quiz",
+  "description": "Teste os seus conhecimentos sobre Genshin Impact!",
+  "questions": [
+    {
+      "image": "https://i.pinimg.com/originals/64/eb/01/64eb0176b8ec007e2c0ffa65a92c8dc0.gif",
+      "title": "Qual apelido a Paimon deu ao Venti?",
+      "description": "Nossa guia também é conhecida por dar os melhores apelidos de Teyvat. Qual apelido ela deu ao Venti",
+      "answer": 2,
+      "alternatives": [
+        "Bardo Surdo",
+        "Bardo Mudo",
+        "Bardo Cego",
+        "Bardo que merece um murro"
+      ]
+    },
+    {
+      "image": "https://media1.tenor.com/images/a4b9d824090f441fb50f62e8ccacdda0/tenor.gif?itemid=19063890",
+      "title": "Qual a relação entre Zhongli e Hu Tao?",
+      "description": "Zhongli a menciona durante algumas questions, evidenciando sua relação.",
+      "answer": 0,
+      "alternatives": [
+         "Assalariado e empregadora, respectivamente",
+         "Cônjuges",
+         "Adepto e Arconte, respectivamente",
+         "Rivais"
+      ]
+    },
+    {
+      "image": "https://media.tenor.com/images/84c718e14e087e29e18dc15380fef742/tenor.gif",
+      "title": "Qual é o verdadeiro nome de Tartaglia",
+      "description": "O Fatui mais amado (ou ódiado) usa dois pseudonimos: Childe e Tartaglia.",
+      "answer": 0,
+      "alternatives": [
+         "Afonso",
+         "Atlas",
+         "Ajax",
+         "Avast"
+      ]
     }
+  ],
+  "external": [
+    ""
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#4a148c",
+      "secondary": "#e91e63",
+      "mainBg": "#3f51b5",
+      "contrastText": "#FFFFFF",
+      "wrong": "#b35053",
+      "success": "#50b3af"
+    },
+    "borderRadius": "4px"
   }
+}
