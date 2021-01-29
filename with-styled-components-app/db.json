@@ -7,10 +7,10 @@
       "image": "https://i.pinimg.com/originals/64/eb/01/64eb0176b8ec007e2c0ffa65a92c8dc0.gif",
       "title": "Qual apelido a Paimon deu ao Venti?",
       "description": "Nossa guia também é conhecida por dar os melhores apelidos de Teyvat. Qual apelido ela deu ao Venti",
-      "answer": 2,
+      "answer": 1,
       "alternatives": [
-        "Bardo Surdo",
         "Bardo Mudo",
+        "Bardo Surdo",
         "Bardo Cego",
         "Bardo que merece um murro"
       ]
@@ -31,17 +31,44 @@
       "image": "https://media.tenor.com/images/84c718e14e087e29e18dc15380fef742/tenor.gif",
       "title": "Qual é o verdadeiro nome de Tartaglia",
       "description": "O Fatui mais amado (ou ódiado) usa dois pseudonimos: Childe e Tartaglia.",
-      "answer": 0,
+      "answer": 2,
       "alternatives": [
          "Afonso",
          "Atlas",
          "Ajax",
          "Avast"
       ]
+    },
+    {
+      "image": "https://media.tenor.com/images/6b802a6cb5b644bd0520c46ddd5eaffd/tenor.gif",
+      "title": "Qual reação elemental causa super condutor?",
+      "description": "O combo de elementos é essencial para aumentar seu dano.",
+      "answer": 3,
+      "alternatives": [
+         "Hydro + Electro",
+         "Pyro + Cryo",
+         "Anemo + Electro",
+         "Cryo + Electro"
+      ]
+    },
+    {
+      "image": "https://media.tenor.com/images/3a150e5f30a2c75272ca0288012741fd/tenor.gif",
+      "title": "O nome do grupo liderado por Morax para proteger Liyue é:",
+      "description": "Morax comanda um grupo de entidades que durante muitos anos protege a terra dos contratos.",
+      "answer": 2,
+      "alternatives": [
+         "Qixing",
+         "Cor Lapis",
+         "Adeptos",
+         "Tianquan"
+      ]
     }
   ],
   "external": [
-    ""
+    "https://digimon-quiz.raphael-gc.vercel.app/",
+    "https://quiz-one-piece.henpassquesori.vercel.app/",
+    "https://naruto-quiz.llofyy.vercel.app/",
+    "https://dragon-ball-quiz.pablotdv.vercel.app/"
   ],
   "theme": {
     "colors": {
@@ -50,7 +77,7 @@
       "mainBg": "#3f51b5",
       "contrastText": "#FFFFFF",
       "wrong": "#b35053",
-      "success": "#50b3af"
+      "success": "#008000"
     },
     "borderRadius": "4px"
   }

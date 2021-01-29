@@ -66,7 +66,24 @@ export default function Home() {
         </Widget>
         <Widget>
           <Widget.Content>
-            <p>HAIL THE PAIMON</p>
+            {/* <ExternalQuizList>
+              {db.external.map((url) => {
+                const prepareUrl = url
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '');
+
+                const [repoName, user] = prepareUrl.split('.');
+                return (
+                  <li key={url}>
+                    <Widget.Topic href={`/quiz/${user}__${repoName}?name=${name}`}>
+                      {`${user}/${repoName}`}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
+            </ExternalQuizList> */}
+            Em Breve
           </Widget.Content>
         </Widget>
         <Footer />
