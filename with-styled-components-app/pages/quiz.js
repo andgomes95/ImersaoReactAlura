@@ -104,7 +104,7 @@ function QuestionWidget({
           onSubmit={(e) => {
             e.preventDefault();
             setIsFormSubmited(true);
-            setLabelConfirm('PEW');
+            setLabelConfirm(isCorrect ? 'ACERTOU' : 'ERROU');
             setTimeout(() => {
               addResults(isCorrect);
               onSubmit();
@@ -146,8 +146,6 @@ function QuestionWidget({
           >
             { labelConfirm }
           </Button>
-          {isFormSubmited && isCorrect && <p>Você Acertou!</p>}
-          {isFormSubmited && !isCorrect && <p>Você Errou!</p>}
         </AlternativesForm>
 
       </Widget.Content>

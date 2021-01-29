@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import db from '../../db.json';
 
-export default function (req, res) {
+export default function dbHandler(req, res) {
   if (req.method === 'OPTIONS') {
     res.status(200).end();
     return;

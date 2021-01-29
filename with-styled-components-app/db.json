@@ -50,6 +50,18 @@
          "Anemo + Electro",
          "Cryo + Electro"
       ]
+    },
+    {
+      "image": "https://media.tenor.com/images/3a150e5f30a2c75272ca0288012741fd/tenor.gif",
+      "title": "O nome do grupo liderado por Morax para proteger Liyue é:",
+      "description": "Morax comanda um grupo de entidades que durante muitos anos protege a terra dos contratos.",
+      "answer": 2,
+      "alternatives": [
+         "Qixing",
+         "Cor Lapis",
+         "Adeptos",
+         "Tianquan"
+      ]
     }
   ],
   "external": [
